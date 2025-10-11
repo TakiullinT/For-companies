@@ -27,7 +27,7 @@ class RegisterAPI(generics.CreateAPIView):
 
 class LoginAPI(generics.GenericAPIView):
     serializer_class = LoginSerializer
-    renderer_classes = [UTF8JSONRenderer]  # Явно ставим рендерер с UTF-8
+    renderer_classes = [UTF8JSONRenderer]
 
     def post(self, request, *args, **kwargs):
         serializer = self.get_serializer(data=request.data)
