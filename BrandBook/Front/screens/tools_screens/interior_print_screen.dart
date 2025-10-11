@@ -53,39 +53,6 @@ class _InteriorPrintScreenState extends State<InteriorPrintScreen> {
     return basePrice * sizeMultiplier * quantity;
   }
 
-  // Widget _buildCardSelector({
-  //   required String title,
-  //   required List<String> options,
-  //   required String selected,
-  //   required void Function(String) onSelect,
-  // }) {
-  //   return Column(
-  //     crossAxisAlignment: CrossAxisAlignment.start,
-  //     children: [
-  //       Text(
-  //         title,
-  //         style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
-  //       ),
-  //       const SizedBox(height: 12),
-  //       Wrap(
-  //         spacing: 10,
-  //         children: options.map((option) {
-  //           final bool isSelected = option == selected;
-  //           return ChoiceChip(
-  //             label: Text(option),
-  //             selected: isSelected,
-  //             onSelected: (_) => onSelect(option),
-  //             selectedColor: Colors.blue.shade100,
-  //             labelStyle: TextStyle(
-  //               color: isSelected ? Colors.blue.shade800 : Colors.black87,
-  //             ),
-  //             padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
-  //           );
-  //         }).toList(),
-  //       ),
-  //     ],
-  //   );
-  // }
   Widget _buildCardSelector({
     required String title,
     required List<String> options,
